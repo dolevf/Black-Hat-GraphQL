@@ -11,3 +11,9 @@
 /api/graphql
 /api/graphiql
 /explorer
+/api/v1/graphql
+/api/v2/graphql
+/api/v3/graphql
+/api/v1/graphiql
+/api/v2/graphiql
+/api/v3/graphiql
