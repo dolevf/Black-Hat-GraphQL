@@ -1,1 +1,1 @@
-# Introduction to GraphQL
+# An introduction to GraphQL
