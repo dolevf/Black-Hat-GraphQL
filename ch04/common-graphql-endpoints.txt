@@ -7,6 +7,12 @@
 /v2/graphiql
 /v3/graphiql
 /playground
+/v1/playground
+/v2/playground
+/v3/playground
+/api/v1/playground
+/api/v2/playground
+/api/v3/playground
 /console
 /api/graphql
 /api/graphiql
