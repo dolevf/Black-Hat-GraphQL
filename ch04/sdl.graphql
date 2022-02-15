@@ -15,10 +15,10 @@ type PasteObject {
 }
 
 type OwnerObject {
-	id: ID!
-	name: String
-	paste: [PasteObject]
-	pastes: [PasteObject]
+  id: ID!
+  name: String
+  paste: [PasteObject]
+  pastes: [PasteObject]
 }
 
 
