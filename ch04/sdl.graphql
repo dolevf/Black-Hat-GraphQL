@@ -1,25 +1,61 @@
 # SDL Example in GraphQL
 
-type Book {
+type PasteObject {
   id: ID!
-  name: String!
-  description: String
-  author: Author!
+  title: String
+  content: String
+  public: Boolean
+  userAgent: String
+  ipAddr: String
+  ownedId: Int
+  burn: Boolean
+  owner: OwnerObject
+  Owner: OwnerObject
+  pId: String
 }
 
-type Author {
-  id: ID!
-  first_name: String!
-  last_name: String!
-  books: Book!
+type OwnerObject {
+	id: ID!
+	name: String
+	paste: [PasteObject]
+	pastes: [PasteObject]
 }
 
 
 type Query {
-  allAuthors: [Author!]!
-  allBooks: [Book!]!
+  pastes: [PasteObject]!
+  paste: PasteObject
+  systemUpdate: String
+  SystemDiagnostics: String
+  systemHealth: String
+  readAndBurn: PasteObject
 }
 
-schema {
-  query: Query
+type CreatePaste {
+	title: String
+  public: Boolean
+  content: String
+  burn: Boolean 
+  paste: PasteObject
+}
+
+type DeletePaste {
+  ok: Boolean
+}
+
+type UploadPaste {
+  content: String
+  filename: String
+  result: String
+}
+
+type ImportPaste {
+  result: String
+}
+
+type Mutation {
+  createPaste:  CreatePaste
+  deletePaste: DeletePaste
+  uploadPaste: UploadPaste
+  importPaste: ImportPaste
 }
