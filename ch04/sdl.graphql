@@ -8,10 +8,10 @@ type Book {
 }
 
 type Author {
-	id: ID!
-	first_name: String!
-	last_name: String!
-	books: Book!
+  id: ID!
+  first_name: String!
+  last_name: String!
+  books: Book!
 }
 
 
