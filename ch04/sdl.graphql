@@ -32,7 +32,7 @@ type Query {
 }
 
 type CreatePaste {
-	title: String
+  title: String
   public: Boolean
   content: String
   burn: Boolean 
