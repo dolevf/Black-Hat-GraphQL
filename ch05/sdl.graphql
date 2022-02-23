@@ -10,14 +10,12 @@ type PasteObject {
   ownedId: Int
   burn: Boolean
   owner: OwnerObject
-  Owner: OwnerObject
   pId: String
 }
 
 type OwnerObject {
   id: ID!
   name: String
-  paste: [PasteObject]
   pastes: [PasteObject]
 }
 
