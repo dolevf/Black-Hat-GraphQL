@@ -1,0 +1,60 @@
+# SDL Example in GraphQL
+
+type PasteObject {
+  id: ID!
+  title: String
+  content: String
+  public: Boolean
+  userAgent: String
+  ipAddr: String
+  ownedId: Int
+  burn: Boolean
+  owner: OwnerObject
+  Owner: OwnerObject
+  pId: String
+}
+
+type OwnerObject {
+  id: ID!
+  name: String
+  paste: [PasteObject]
+  pastes: [PasteObject]
+}
+
+type CreatePaste {
+  title: String
+  public: Boolean
+  content: String
+  burn: Boolean 
+  paste: PasteObject
+}
+
+type DeletePaste {
+  ok: Boolean
+}
+
+type UploadPaste {
+  content: String
+  filename: String
+  result: String
+}
+
+type ImportPaste {
+  result: String
+}
+
+type Mutation {
+  createPaste:  CreatePaste
+  deletePaste: DeletePaste
+  uploadPaste: UploadPaste
+  importPaste: ImportPaste
+}
+
+type Query {
+  pastes: [PasteObject]!
+  paste: PasteObject
+  systemUpdate: String
+  SystemDiagnostics: String
+  systemHealth: String
+  readAndBurn: PasteObject
+}
