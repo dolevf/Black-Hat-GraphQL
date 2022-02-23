@@ -21,16 +21,6 @@ type OwnerObject {
   pastes: [PasteObject]
 }
 
-
-type Query {
-  pastes: [PasteObject]!
-  paste: PasteObject
-  systemUpdate: String
-  SystemDiagnostics: String
-  systemHealth: String
-  readAndBurn: PasteObject
-}
-
 type CreatePaste {
   title: String
   public: Boolean
@@ -58,4 +48,13 @@ type Mutation {
   deletePaste: DeletePaste
   uploadPaste: UploadPaste
   importPaste: ImportPaste
+}
+
+type Query {
+  pastes: [PasteObject]!
+  paste: PasteObject
+  systemUpdate: String
+  SystemDiagnostics: String
+  systemHealth: String
+  readAndBurn: PasteObject
 }
