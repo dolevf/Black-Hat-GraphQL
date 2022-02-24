@@ -1,262 +1,81 @@
 query {
   pastes {
-    title
-    content
     owner {
-      name
       pastes {
-        edges {
-          node {
-            content
-            title
+        owner {
+          pastes {
             owner {
-              name
               pastes {
-                edges {
-                  node {
-                    content
-                    title
+                owner {
+                  pastes {
                     owner {
-                      name
                       pastes {
-                        edges {
-                          node {
-                            title
-                            content
+                        owner {
+                          pastes {
                             owner {
-                              name
                               pastes {
-                                edges {
-                                  node {
-                                    title
-                                    content
+                                owner {
+                                  pastes {
                                     owner {
-                                      name
                                       pastes {
-                                        edges {
-                                          node {
-                                            title
-                                            content
+                                        owner {
+                                          pastes {
                                             owner {
-                                              name
                                               pastes {
-                                                edges {
-                                                  node {
-                                                    title
-                                                    content
+                                                owner {
+                                                  pastes {
                                                     owner {
-                                                      name
                                                       pastes {
-                                                        edges {
-                                                          node {
-                                                            title
-                                                            content
+                                                        owner {
+                                                          pastes {
                                                             owner {
-                                                              name
                                                               pastes {
-                                                                edges {
-                                                                  node {
-                                                                    title
-                                                                    content
+                                                                owner {
+                                                                  pastes {
                                                                     owner {
-                                                                      name
                                                                       pastes {
-                                                                        edges {
-                                                                          node {
-                                                                            title
-                                                                            content
+                                                                        owner {
+                                                                          pastes {
                                                                             owner {
-                                                                              name
                                                                               pastes {
-                                                                                edges {
-                                                                                  node {
-                                                                                    title
-                                                                                    content
+                                                                                owner {
+                                                                                  pastes {
                                                                                     owner {
-                                                                                      name
                                                                                       pastes {
-                                                                                        edges {
-                                                                                          node {
-                                                                                            title
-                                                                                            content
+                                                                                        owner {
+                                                                                          pastes {
                                                                                             owner {
-                                                                                              name
                                                                                               pastes {
-                                                                                                edges {
-                                                                                                  node {
-                                                                                                    title
-                                                                                                    content
+                                                                                                owner {
+                                                                                                  pastes {
                                                                                                     owner {
-                                                                                                      name
                                                                                                       pastes {
-                                                                                                        edges {
-                                                                                                          node {
-                                                                                                            title
-                                                                                                            content
+                                                                                                        owner {
+                                                                                                          pastes {
                                                                                                             owner {
-                                                                                                              name
                                                                                                               pastes {
-                                                                                                                edges {
-                                                                                                                  node {
-                                                                                                                    title
-                                                                                                                    content
+                                                                                                                owner {
+                                                                                                                  pastes {
                                                                                                                     owner {
-                                                                                                                      name
                                                                                                                       pastes {
-                                                                                                                        edges {
-                                                                                                                          node {
-                                                                                                                            title
-                                                                                                                            content
+                                                                                                                        owner {
+                                                                                                                          pastes {
                                                                                                                             owner {
-                                                                                                                              name
                                                                                                                               pastes {
-                                                                                                                                edges {
-                                                                                                                                  node {
-                                                                                                                                    title
-                                                                                                                                    content
+                                                                                                                                owner {
+                                                                                                                                  pastes {
                                                                                                                                     owner {
-                                                                                                                                      name
                                                                                                                                       pastes {
-                                                                                                                                        edges {
-                                                                                                                                          node {
-                                                                                                                                            title
-                                                                                                                                            content
+                                                                                                                                        owner {
+                                                                                                                                          pastes {
                                                                                                                                             owner {
-                                                                                                                                              name
                                                                                                                                               pastes {
-                                                                                                                                                edges {
-                                                                                                                                                  node {
-                                                                                                                                                    title
-                                                                                                                                                    content
+                                                                                                                                                owner {
+                                                                                                                                                  pastes {
                                                                                                                                                     owner {
-                                                                                                                                                      name
                                                                                                                                                       pastes {
-                                                                                                                                                        edges {
-                                                                                                                                                          node {
-                                                                                                                                                            title
-                                                                                                                                                            content
-                                                                                                                                                            owner {
-                                                                                                                                                              name
-                                                                                                                                                              pastes {
-                                                                                                                                                                edges {
-                                                                                                                                                                  node {
-                                                                                                                                                                    title
-                                                                                                                                                                    content
-                                                                                                                                                                    owner {
-                                                                                                                                                                      name
-                                                                                                                                                                      pastes {
-                                                                                                                                                                        edges {
-                                                                                                                                                                          node {
-                                                                                                                                                                            title
-                                                                                                                                                                            content
-                                                                                                                                                                            owner {
-                                                                                                                                                                              name
-                                                                                                                                                                              pastes {
-                                                                                                                                                                                edges {
-                                                                                                                                                                                  node {
-                                                                                                                                                                                    title
-                                                                                                                                                                                    content
-                                                                                                                                                                                    owner {
-                                                                                                                                                                                      name
-                                                                                                                                                                                      pastes {
-                                                                                                                                                                                        edges {
-                                                                                                                                                                                          node {
-                                                                                                                                                                                            title
-                                                                                                                                                                                            content
-                                                                                                                                                                                            owner {
-                                                                                                                                                                                              name
-                                                                                                                                                                                              pastes {
-                                                                                                                                                                                                edges {
-                                                                                                                                                                                                  node {
-                                                                                                                                                                                                    title
-                                                                                                                                                                                                    content
-                                                                                                                                                                                                    owner {
-                                                                                                                                                                                                      name
-                                                                                                                                                                                                      pastes {
-                                                                                                                                                                                                        edges {
-                                                                                                                                                                                                          node {
-                                                                                                                                                                                                            title
-                                                                                                                                                                                                            content
-                                                                                                                                                                                                            owner {
-                                                                                                                                                                                                              name
-                                                                                                                                                                                                              pastes {
-                                                                                                                                                                                                                edges {
-                                                                                                                                                                                                                  node {
-                                                                                                                                                                                                                    title
-                                                                                                                                                                                                                    content
-                                                                                                                                                                                                                    owner {
-                                                                                                                                                                                                                      name
-                                                                                                                                                                                                                      pastes {
-                                                                                                                                                                                                                        edges {
-                                                                                                                                                                                                                          node {
-                                                                                                                                                                                                                            title
-                                                                                                                                                                                                                            content
-                                                                                                                                                                                                                            owner {
-                                                                                                                                                                                                                              name
-                                                                                                                                                                                                                              pastes {
-                                                                                                                                                                                                                                edges {
-                                                                                                                                                                                                                                  node {
-                                                                                                                                                                                                                                    title
-                                                                                                                                                                                                                                    content
-                                                                                                                                                                                                                                    owner {
-                                                                                                                                                                                                                                      name
-                                                                                                                                                                                                                                      pastes {
-                                                                                                                                                                                                                                        edges {
-                                                                                                                                                                                                                                          node {
-                                                                                                                                                                                                                                            title
-                                                                                                                                                                                                                                            content
-                                                                                                                                                                                                                                            owner {
-                                                                                                                                                                                                                                              name
-                                                                                                                                                                                                                                              pastes {
-                                                                                                                                                                                                                                                edges {
-                                                                                                                                                                                                                                                  node {
-                                                                                                                                                                                                                                                    title
-                                                                                                                                                                                                                                                    content
-                                                                                                                                                                                                                                                  }
-                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                              }
-                                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                                          }
-                                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                                      }
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                  }
-                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                              }
-                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                          }
-                                                                                                                                                                                                                        }
-                                                                                                                                                                                                                      }
-                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                  }
-                                                                                                                                                                                                                }
-                                                                                                                                                                                                              }
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                          }
-                                                                                                                                                                                                        }
-                                                                                                                                                                                                      }
-                                                                                                                                                                                                    }
-                                                                                                                                                                                                  }
-                                                                                                                                                                                                }
-                                                                                                                                                                                              }
-                                                                                                                                                                                            }
-                                                                                                                                                                                          }
-                                                                                                                                                                                        }
-                                                                                                                                                                                      }
-                                                                                                                                                                                    }
-                                                                                                                                                                                  }
-                                                                                                                                                                                }
-                                                                                                                                                                              }
-                                                                                                                                                                            }
-                                                                                                                                                                          }
-                                                                                                                                                                        }
-                                                                                                                                                                      }
-                                                                                                                                                                    }
-                                                                                                                                                                  }
-                                                                                                                                                                }
-                                                                                                                                                              }
-                                                                                                                                                            }
-                                                                                                                                                          }
+                                                                                                                                                        owner {
+                                                                                                                                                          name
                                                                                                                                                         }
                                                                                                                                                       }
                                                                                                                                                     }
