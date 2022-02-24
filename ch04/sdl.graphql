@@ -7,10 +7,9 @@ type PasteObject {
   public: Boolean
   userAgent: String
   ipAddr: String
-  ownedId: Int
+  ownerId: Int
   burn: Boolean
   owner: OwnerObject
-  Owner: OwnerObject
   pId: String
 }
 
