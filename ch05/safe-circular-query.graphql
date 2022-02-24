@@ -1,15 +1,9 @@
 query {
   pastes {
-    title
-    content
     owner {
-      name
       pastes {
-        edges {
-          node {
-            content
-            title
-          }
+        owner {
+          name
         }
       }
     }
