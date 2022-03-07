@@ -3,7 +3,7 @@
 import requests
 
 ARRAY_LENGTH = 5
-QUERY_REPEAT = 10 
+FIELD_REPEAT = 10 
 
 query = {"query":"query {"}
 field_1_name = 'pastes'
