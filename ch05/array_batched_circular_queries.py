@@ -10,18 +10,18 @@ field_1_name = 'pastes'
 field_2_name = 'owner'
 
 count = 0
-for _ in range(QUERY_REPEAT):
+for _ in range(FIELD_REPEAT):
     count += 1
-    closing_braces = '} ' * QUERY_REPEAT * 2  + '}'
+    closing_braces = '} ' * FIELD_REPEAT * 2  + '}'
     payload = "{0} {{ {1} {{ ".format(field_1_name, field_2_name)
     query["query"] += payload
 
-    if count == QUERY_REPEAT:
+    if count == FIELD_REPEAT:
       query["query"] += '__typename' + closing_braces
 
 print('Query:', query['query'])
-print('Query Repeated:', QUERY_REPEAT, 'times')
-print('Query Depth:', QUERY_REPEAT * 2 + 1, 'levels')
+print('Query Repeated:', FIELD_REPEAT, 'times')
+print('Query Depth:', FIELD_REPEAT * 2 + 1, 'levels')
 print('Array Length:', ARRAY_LENGTH, 'elements')
 
 queries = []
