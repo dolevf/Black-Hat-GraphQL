@@ -7,6 +7,7 @@ QUERY_REPEAT = 10
 
 query = {"query":"query {"}
 count = 0
+
 for _ in range(QUERY_REPEAT):
     count += 1
     closing_braces = '} ' * QUERY_REPEAT * 2  + '}'
@@ -20,8 +21,6 @@ print('Query:', query['query'])
 print('Query Repeated:', QUERY_REPEAT, 'times')
 print('Query Depth:', QUERY_REPEAT * 2 + 1, 'levels')
 print('Array Length:', ARRAY_LENGTH, 'elements')
-
-
 
 queries = []
 for _ in range(ARRAY_LENGTH):
