@@ -6,16 +6,18 @@ ARRAY_LENGTH = 5
 QUERY_REPEAT = 10 
 
 query = {"query":"query {"}
-count = 0
+field_1_name = 'pastes'
+field_2_name = 'owner'
 
+count = 0
 for _ in range(QUERY_REPEAT):
     count += 1
     closing_braces = '} ' * QUERY_REPEAT * 2  + '}'
-    payload = "pastes { owner { "
+    payload = "{0} {{ {1} {{ ".format(field_1_name, field_2_name)
     query["query"] += payload
 
     if count == QUERY_REPEAT:
-      query["query"] += 'name' + closing_braces
+      query["query"] += '__typename' + closing_braces
 
 print('Query:', query['query'])
 print('Query Repeated:', QUERY_REPEAT, 'times')
