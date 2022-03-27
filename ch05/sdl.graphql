@@ -10,7 +10,6 @@ type PasteObject {
   ownedId: Int
   burn: Boolean
   owner: OwnerObject
-  pId: String
 }
 
 type OwnerObject {
@@ -28,7 +27,7 @@ type CreatePaste {
 }
 
 type DeletePaste {
-  ok: Boolean
+  result: Boolean
 }
 
 type UploadPaste {
