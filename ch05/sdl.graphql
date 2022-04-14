@@ -1,8 +1,7 @@
-# SDL Example in GraphQL
-
 schema {
   query: Query
   mutation: Mutations
+  subscription: Subscription
 }
 
 """
@@ -21,6 +20,7 @@ type Query {
   systemHealth: String
   users(id: Int): [UserObject]
   readAndBurn(id: Int): PasteObject
+  search(keyword: String): [SearchResult]
 }
 
 type PasteObject {
@@ -47,6 +47,8 @@ type UserObject {
   username(capitalize: Boolean): String
 }
 
+union SearchResult = PasteObject | UserObject
+
 type Mutations {
   createPaste(
     burn: Boolean = false
@@ -63,6 +65,7 @@ type Mutations {
     port: Int
     scheme: String!
   ): ImportPaste
+  createUser(userData: UserInput!): CreateUser
 }
 
 type CreatePaste {
@@ -85,4 +88,17 @@ type UploadPaste {
 
 type ImportPaste {
   result: String
+}
+
+type CreateUser {
+  user: UserObject
+}
+
+input UserInput {
+  username: String!
+  password: String!
+}
+
+type Subscription {
+  paste(id: Int, title: String): PasteObject
 }
