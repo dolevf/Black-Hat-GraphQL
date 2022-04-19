@@ -1,4 +1,4 @@
-# https://github.com/graphql/graphql-spec/blob/main/spec/Section%204%20--%20Introspection.md#schema-introspection
+# https://spec.graphql.org/October2021/#sec-Schema-Introspection.Schema-Introspection-Schema
 
 type __Schema {
   description: String
