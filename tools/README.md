@@ -22,6 +22,3 @@ This section includes popular GraphQL Security tools and frameworks you could us
 
 ## Visualization
 - [Voyager](https://github.com/APIs-guru/graphql-voyager)
-
-# Changelog
-
