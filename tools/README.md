@@ -4,6 +4,7 @@ This section includes popular GraphQL Security tools and frameworks you could us
 ## Frameworks
 - [Damn Vulnerable GraphQL Application](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application/)
 - [GraphQL Security Labs](https://github.com/david3107/graphql-security-labs)
+- [GraphQL Threat Matrix](https://github.com/nicholasaleks/graphql-threat-matrix/)
 
 ## Tools
 - [Clairvoyance](https://github.com/nikitastupin/clairvoyance)
