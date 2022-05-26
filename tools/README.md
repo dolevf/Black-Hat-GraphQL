@@ -21,4 +21,4 @@ This section includes popular GraphQL Security tools and frameworks you could us
 - [Altair Client](https://altair.sirmuel.design/)
 
 ## Visualization
-- [Voyager](https://github.com/APIs-guru/graphql-voyager)
+- [Voyager](https://ivangoncharov.github.io/graphql-voyager/)
