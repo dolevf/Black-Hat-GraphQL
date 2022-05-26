@@ -21,6 +21,7 @@ type Query {
   users(id: Int): [UserObject]
   readAndBurn(id: Int): PasteObject
   search(keyword: String): [SearchResult]
+  audits: [AuditObject]
 }
 
 type PasteObject {
@@ -48,6 +49,20 @@ type UserObject {
 }
 
 union SearchResult = PasteObject | UserObject
+
+type AuditObject {
+  id: ID!
+  gqloperation: String
+  gqlquery: String
+  timestamp: DateTime
+}
+
+"""
+The `DateTime` scalar type represents a DateTime
+value as specified by
+[iso8601](https://en.wikipedia.org/wiki/ISO_8601).
+"""
+scalar DateTime
 
 type Mutations {
   createPaste(
