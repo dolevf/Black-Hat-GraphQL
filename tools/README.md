@@ -22,3 +22,4 @@ This section includes popular GraphQL Security tools and frameworks you could us
 
 ## Visualization
 - [Voyager](https://ivangoncharov.github.io/graphql-voyager/)
+- [SpectaQL](https://github.com/anvilco/spectaql)
