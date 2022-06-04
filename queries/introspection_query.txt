@@ -1,4 +1,4 @@
- # resource: GraphQL Voyager
+# source: GraphQL Voyager
  
 query IntrospectionQuery {
   __schema {
