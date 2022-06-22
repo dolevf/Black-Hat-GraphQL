@@ -1,1 +1,1 @@
-# Client and Server Side Request Forgery
+# Request Forgery and Hijacking
