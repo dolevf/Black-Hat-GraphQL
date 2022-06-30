@@ -16,6 +16,7 @@ This section includes popular GraphQL Security tools and frameworks you could us
 - [Nmap NSE for GraphQL](https://github.com/dolevf/nmap-graphql-introspection-nse/tree/master)
 - [shapeshifter](https://github.com/szski/shapeshifter) (unmaintained)
 - [GraphQL Cop](https://github.com/dolevf/graphql-cop)
+- [CrackQL](https://github.com/nicholasaleks/crackQL)
 
 ## Clients
 - [Altair Client](https://altair.sirmuel.design/)
