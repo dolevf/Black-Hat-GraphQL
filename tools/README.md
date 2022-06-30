@@ -14,7 +14,7 @@ This section includes popular GraphQL Security tools and frameworks you could us
 - [GraphQLmap](https://github.com/swisskyrepo/GraphQLmap)
 - [graphql-path-enum](https://gitlab.com/dee-see/graphql-path-enum)
 - [Nmap NSE for GraphQL](https://github.com/dolevf/nmap-graphql-introspection-nse/tree/master)
-- [shapeshifter](https://github.com/szski/shapeshifter) (unmaintained)
+- [shapeshifter](https://github.com/szski/shapeshifter)
 - [GraphQL Cop](https://github.com/dolevf/graphql-cop)
 - [CrackQL](https://github.com/nicholasaleks/crackQL)
 
