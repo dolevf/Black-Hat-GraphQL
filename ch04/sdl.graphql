@@ -21,6 +21,9 @@ type Query {
   users(id: Int): [UserObject]
   readAndBurn(id: Int): PasteObject
   search(keyword: String): [SearchResult]
+  audits: [AuditObject]
+  deleteAllPastes: Boolean
+  me(token: String): UserObject
 }
 
 type PasteObject {
@@ -45,9 +48,24 @@ type OwnerObject {
 type UserObject {
   id: ID!
   username(capitalize: Boolean): String
+  password: String!
 }
 
 union SearchResult = PasteObject | UserObject
+
+type AuditObject {
+  id: ID!
+  gqloperation: String
+  gqlquery: String
+  timestamp: DateTime
+}
+
+"""
+The `DateTime` scalar type represents a DateTime
+value as specified by
+[iso8601](https://en.wikipedia.org/wiki/ISO_8601).
+"""
+scalar DateTime
 
 type Mutations {
   createPaste(
@@ -66,6 +84,7 @@ type Mutations {
     scheme: String!
   ): ImportPaste
   createUser(userData: UserInput!): CreateUser
+  login(password: String, username: String): Login
 }
 
 type CreatePaste {
@@ -96,7 +115,13 @@ type CreateUser {
 
 input UserInput {
   username: String!
+  email: String!
   password: String!
+}
+
+type Login {
+  accessToken: String
+  refreshToken: String
 }
 
 type Subscription {
