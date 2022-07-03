@@ -22,6 +22,8 @@ type Query {
   readAndBurn(id: Int): PasteObject
   search(keyword: String): [SearchResult]
   audits: [AuditObject]
+  deleteAllPastes: Boolean
+  me(token: String): UserObject
 }
 
 type PasteObject {
@@ -46,6 +48,7 @@ type OwnerObject {
 type UserObject {
   id: ID!
   username(capitalize: Boolean): String
+  password: String!
 }
 
 union SearchResult = PasteObject | UserObject
@@ -81,6 +84,7 @@ type Mutations {
     scheme: String!
   ): ImportPaste
   createUser(userData: UserInput!): CreateUser
+  login(password: String, username: String): Login
 }
 
 type CreatePaste {
@@ -111,7 +115,13 @@ type CreateUser {
 
 input UserInput {
   username: String!
+  email: String!
   password: String!
+}
+
+type Login {
+  accessToken: String
+  refreshToken: String
 }
 
 type Subscription {
