@@ -17,8 +17,7 @@ This section includes popular GraphQL Security tools and frameworks you could us
 - [shapeshifter](https://github.com/szski/shapeshifter)
 - [GraphQL Cop](https://github.com/dolevf/graphql-cop)
 - [CrackQL](https://github.com/nicholasaleks/crackQL)
-- [Graphinder](https://github.com/Escape-Technologies/graphinder/)
-- 
+- [Graphinder](https://github.com/Escape-Technologies/graphinder)
 
 ## Clients
 - [Altair Client](https://altair.sirmuel.design/)
