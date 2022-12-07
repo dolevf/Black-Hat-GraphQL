@@ -18,6 +18,7 @@ This section includes popular GraphQL Security tools and frameworks you could us
 - [GraphQL Cop](https://github.com/dolevf/graphql-cop)
 - [CrackQL](https://github.com/nicholasaleks/crackQL)
 - [Graphinder](https://github.com/Escape-Technologies/graphinder)
+- [GraphQuail](https://github.com/forcesunseen/graphquail)
 
 ## Burp Suite Plugins
 - [GraphQL Raider](https://portswigger.net/bappstore/4841f0d78a554ca381c65b26d48207e6)
