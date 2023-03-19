@@ -6,5 +6,5 @@ Enjoy!
 ***
 
 ## Errata
-* Page 83 Listing 4-14 : `grep -Hnio "graphiql\|graphql-playground" dvga-report/source/*`
+* Page 83 Listing 4-14: `grep` command should be corrected to: `grep -Hnio "graphiql\|graphql-playground" dvga-report/source/*`
 
