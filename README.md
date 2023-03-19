@@ -6,5 +6,5 @@ Enjoy!
 ***
 
 ## Errata
-* Corrections go here.
+Listing 4-14 : `grep -Hnio "graphiql\|graphql-playground" dvga-report/source/*`
 
