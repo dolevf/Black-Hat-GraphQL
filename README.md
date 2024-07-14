@@ -11,4 +11,4 @@ Enjoy!
 * Page 177: The `COOKIES` variable value should read `{"session":"session-secret"}`
 
 ## Notes
-* Due to changes in InQL, you may need to install the tool from the its V4 branch (4.0.7)[https://github.com/doyensec/inql/releases/tag/v4.0.7]
+* Due to changes in InQL, you may need to install the tool from the its V4 branch [4.0.7](https://github.com/doyensec/inql/releases/tag/v4.0.7)
