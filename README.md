@@ -1,7 +1,7 @@
 # Black Hat GraphQL
 Book files for **Black Hat GraphQL**.
 
-<table style="border-collapse:collapse;border:none;">
+<table>
   <tr>
     <td style="vertical-align:top;width:40%">
       <img src="Cover.png" alt="Black Hat GraphQL Cover" />
